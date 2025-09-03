@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import TodoItem from './TodoItem';
-import { fetchAllTodos } from '@/reducers/todosSlice';
+import { fetchAllTodos } from '@/reducers/todoSlice';
 
 const TodoItemList = ({ myToggle, myRemove }) => {
   const myTodos = useSelector((state) => state.todos);
