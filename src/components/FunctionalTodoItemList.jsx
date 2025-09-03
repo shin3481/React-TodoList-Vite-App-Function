@@ -1,11 +1,11 @@
 import { memo } from 'react';
 import PropTypes from 'prop-types';
-import FunctionalTodoItem from './FunctionalTodoItem';
+import TodoItem from './FunctionalTodoItem';
 
 const FunctionalTodoItemList = ({ myTodos, myToggle, myRemove }) => {
   const todoList = myTodos.map(
     ({ id, text, checked }) => (
-      <FunctionalTodoItem
+      <TodoItem
         id={id}
         text={text}
         checked={checked}
